@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aplicación web para llevar el control de las cuentas del Condominio Apamates II.">
+	<meta name= "robots" content= "index, follow">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+	<title>Control de Condominio Apamates II</title>
+	<link href="condo.css" type="text/css" rel="stylesheet" />
+	<link href="condo-tablets.css" media="screen and (min-width: 600px)" type="text/css" rel="stylesheet" />
+	<link href="condo-desktop.css" media="screen and (min-width: 1024px)" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<header>
+
+	</header>
+	<main>
+		<section class="info-edificio-container">
+			<h1>Condominio Edificio Apamates II</h1>
+			<div class="info-edificio">
+				<p>Urbanización El Varillal</p>
+				<p>Maracaibo, Estado Zulia</p>
+				<p>Venezuela</p>
+			</div>
+		</section>
+		<section id="cuotas_condominio_container">
+			<h2>MONTOS DE CUOTAS DE CONDOMINIO</h2>
+			<div>
+				<table class="tabla-cuotas-condominio">
+					<thead>
+						<tr>
+							<th colspan="2">Cuotas de Condominio</th>
+						</tr>
+						<tr>
+							<th>Mes</th>
+							<th>Bs.</th>
+						</tr>
+					</thead>
+					<tbody id="cuerpo_tabla_cuotas_condominio">
+
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<section class="propietarios">
+			<h2>CONTROL DE PAGOS DE CUOTA DE CONDOMINIO</h2>
+			<div><span>Filtrar por:</span>
+				<select id="filtro_busqueda">
+					<option value="nombre" selected="">Propietario</option>
+					<option value="apto">Apartamento</option>
+				</select>
+			</div>
+			<div id="lista_propietarios_container">
+				<select id="lista_propietarios">
+					<option value="" id="prop00" selected="selected"></option>
+					<option value="0" id="prop01"></option>
+					<option value="1" id="prop02"></option>
+					<option value="2" id="prop03"></option>
+					<option value="3" id="prop04"></option>
+					<option value="4" id="prop05"></option>
+					<option value="5" id="prop06"></option>
+					<option value="6" id="prop07"></option>
+					<option value="7" id="prop08"></option>
+					<option value="8" id="prop09"></option>
+					<option value="9" id="prop10"></option>
+					<option value="10" id="prop11"></option>
+					<option value="11" id="prop12"></option>
+					<option value="12" id="prop13"></option>
+					<option value="13" id="prop14"></option>
+					<option value="14" id="prop15"></option>
+					<option value="15" id="prop16"></option>
+				</select>
+			</div>
+			<div id="lista_propietarios_apto_container">
+				<select id="lista_propietarios_apto">
+					<option value="" id="prop0" selected="selected"></option>
+					<option value="0" id="prop1"></option>
+					<option value="1" id="prop2"></option>
+					<option value="2" id="prop3"></option>
+					<option value="3" id="prop4"></option>
+					<option value="4" id="prop5"></option>
+					<option value="5" id="prop6"></option>
+					<option value="6" id="prop7"></option>
+					<option value="7" id="prop8"></option>
+					<option value="8" id="prop9"></option>
+					<option value="9" id="prop010"></option>
+					<option value="10" id="prop011"></option>
+					<option value="11" id="prop012"></option>
+					<option value="12" id="prop013"></option>
+					<option value="13" id="prop014"></option>
+					<option value="14" id="prop015"></option>
+					<option value="15" id="prop016"></option>
+				</select>
+			</div>
+			<div id = "container_tabla_condominio" class="container-tabla-condominio">
+				<table id="tabla_condominio" class="tabla-propietarios">
+					<thead>
+						<tr>
+							<th id="nombre_propietario" colspan="3"></th>
+						</tr>
+						<tr>
+							<th id="apart_propietario" colspan="3"></th>
+						</tr>
+						<tr>
+							<th class="columna-mes">Mes</th>
+							<th>Pago</th>
+							<th>Deuda</th>
+						</tr>
+					</thead>
+					<tbody id="cuerpo_tabla_propietarios">
+						<tr>
+							<td>Enero</td>
+							<td id="pago_enero_propietario"></td>
+							<td id="deuda_enero_propietario"></td>
+						</tr>
+						<tr>
+							<td>Febrero</td>
+							<td id="pago_febrero_propietario"></td>
+							<td id="deuda_febrero_propietario"></td>
+						</tr>
+						<tr>
+							<td>Marzo</td>
+							<td id="pago_marzo_propietario"></td>
+							<td id="deuda_marzo_propietario"></td>
+						</tr>
+						<tr>
+							<td>Abril</td>
+							<td id="pago_abril_propietario"></td>
+							<td id="deuda_abril_propietario"></td>
+						</tr>
+						<tr>
+							<td>Mayo</td>
+							<td id="pago_mayo_propietario"></td>
+							<td id="deuda_mayo_propietario"></td>
+						</tr>
+						<tr>
+							<td>Junio</td>
+							<td id="pago_junio_propietario"></td>
+							<td id="deuda_junio_propietario"></td>
+						</tr>
+						<tr>
+							<td>Julio</td>
+							<td id="pago_julio_propietario"></td>
+							<td id="deuda_julio_propietario"></td>
+						</tr>
+						<tr>
+							<td>Agosto</td>
+							<td id="pago_agosto_propietario"></td>
+							<td id="deuda_agosto_propietario"></td>
+						</tr>
+						<tr>
+							<td>Septiembre</td>
+							<td id="pago_septiembre_propietario"></td>
+							<td id="deuda_septiembre_propietario"></td>
+						</tr>
+						<tr>
+							<td>Octubre</td>
+							<td id="pago_octubre_propietario"></td>
+							<td id="deuda_octubre_propietario"></td>
+						</tr>
+						<tr>
+							<td>Noviembre</td>
+							<td id="pago_noviembre_propietario"></td>
+							<td id="deuda_noviembre_propietario"></td>
+						</tr>
+						<tr>
+							<td>Diciembre</td>
+							<td id="pago_diciembre_propietario"></td>
+							<td id="deuda_diciembre_propietario"></td>
+						</tr>
+						<tr class="fila-deuda-total">
+							<td colspan="2">Total Deuda:</td>
+							<td id="deuda_total_propietario"></td>
+						</tr>
+					</tbody>
+				</table>
+				<p>Montos expresados en Bs.</p>
+				<p>Último cierre: <span id="mes_vencido"></span>.</p>
+				<p>Porcentaje de interés por mora: 10%.</p>
+				<p><button id="boton_recibo">Descargar Recibo de Pago</button></p>
+			</div>
+		</section>
+
+		<section id="cuotas_azotea_container">
+			<h2>CONTROL DE PAGOS DE CUOTA ESPECIAL PARA REPARACIÓN DEL TANQUE DE LA AZOTEA</h2>
+			<div>
+				<table class="tabla-cuota-azotea">
+					<thead>
+						<tr>
+							<th colspan="4">CUOTA PARA LIMPIEZA DE TANQUE DE AZOTEA</th>
+						</tr>
+						<tr>
+							<th colspan="4">Monto: $<span id="cuota_azotea"></span></th>
+						</tr>
+					</thead>
+					<tbody id="cuerpo_tabla_deuda_azotea">
+						<tr>
+							<td>Apart.</td>
+							<td>Propietario</td>
+							<td>Pago</td>
+							<td>Deuda</td>
+						</tr>
+					</tbody>
+				</table>			
+			</div>
+		</section>
+		
+		<section id="cuotas_hidrolago_container">
+			<h2>CONTROL DE PAGOS DE CUOTA ESPECIAL PARA PAGO DE DEUDA DE HIDROLAGO</h2>
+			<div>
+				<table class="tabla-cuota-hidrolago">
+					<thead>
+						<tr>
+							<th colspan="4">CUOTA PARA PAGO DE DEUDA HIDROLAGO</th>
+						</tr>
+						<tr>
+							<th colspan="4">Monto: Bs.<span id="cuota_hidrolago"></span></th>
+						</tr>
+					</thead>
+					<tbody id="cuerpo_tabla_deuda_hidrolago">
+						<tr>
+							<td>Apart.</td>
+							<td>Propietario</td>
+							<td>Pago</td>
+							<td>Deuda</td>
+						</tr>
+					</tbody>
+				</table>			
+			</div>
+		</section>
+		
+		<section class="resumen_condo_container">
+			<h2>RESUMEN FINANCIERO DEL CONDOMINIO</h2>
+			<div id = "container_tabla_resumen" class="container-tabla-resumen">
+				<table id="tabla_resumen" class="tabla-resumen">
+					<thead>
+						<tr>
+							<th colspan="3">BALANCE ANUAL</th>
+						</tr>
+						<tr>
+							<th colspan="3">CUOTAS CONDOMINIO</th>
+						</tr>
+						<tr>
+							<th>Mes</th>
+							<th>Ingresos</th>
+							<th>Egresos</th>
+						</tr>
+					</thead>
+					<tbody id="cuerpo_tabla_resumen">
+						<tr>
+							<td>Enero</td>
+							<td id="ingreso_enero"></td>
+							<td id="egreso_enero"></td>
+						</tr>
+						<tr>
+							<td>Febrero</td>
+							<td id="ingreso_febrero"></td>
+							<td id="egreso_febrero"></td>
+						</tr>
+						<tr>
+							<td>Marzo</td>
+							<td id="ingreso_marzo"></td>
+							<td id="egreso_marzo"></td>
+						</tr>
+						<tr>
+							<td>Abril</td>
+							<td id="ingreso_abril"></td>
+							<td id="egreso_abril"></td>
+						</tr>
+						<tr>
+							<td>Mayo</td>
+							<td id="ingreso_mayo"></td>
+							<td id="egreso_mayo"></td>
+						</tr>
+						<tr>
+							<td>Junio</td>
+							<td id="ingreso_junio"></td>
+							<td id="egreso_junio"></td>
+						</tr>
+						<tr>
+							<td>Julio</td>
+							<td id="ingreso_julio"></td>
+							<td id="egreso_julio"></td>
+						</tr>
+						<tr>
+							<td>Agosto</td>
+							<td id="ingreso_agosto"></td>
+							<td id="egreso_agosto"></td>
+						</tr>
+						<tr>
+							<td>Septiembre</td>
+							<td id="ingreso_septiembre"></td>
+							<td id="egreso_septiembre"></td>
+						</tr>
+						<tr>
+							<td>Octubre</td>
+							<td id="ingreso_octubre"></td>
+							<td id="egreso_octubre"></td>
+						</tr>
+						<tr>
+							<td>Noviembre</td>
+							<td id="ingreso_noviembre"></td>
+							<td id="egreso_noviembre"></td>
+						</tr>
+						<tr>
+							<td>Diciembre</td>
+							<td id="ingreso_diciembre"></td>
+							<td id="egreso_diciembre"></td>
+						</tr>
+						<tr class="fila-balance">
+							<td>Balance:</td>
+							<td id="ingreso_fondo_2022"></td>
+							<td id="egreso_fondo_2022"></td>
+						</tr>
+						<tr>
+							<td class="fila-cuotas-especiales" colspan="3">CUOTAS ESPECIALES</td>
+						</tr>
+						<tr class="cuotas-especiales-cabecera">
+							<td>Descripción</td>
+							<td>Ingresos</td>
+							<td>Egresos</td>
+						</tr>
+						<tr>
+							<td>Fondo Cuota Tanque Azotea</td>
+							<td id="ingreso_cuota_tanque"></td>
+							<td id="egreso_cuota_tanque"></td>
+						</tr>
+						<tr>
+							<td>Fondo Cuota Hridrolago</td>
+							<td id="ingreso_cuota_hidrolago"></td>
+							<td id="egreso_cuota_hidrolago"></td>
+						</tr>
+						<tr  class="fila-balance">
+							<td>Balance:</td>
+							<td id="ingresos_cuotas_especiales"></td>
+							<td id="egresos_cuotas_especiales"></td>
+						</tr>
+						<tr>
+							<td class="fila-adicionales" colspan="3">ADICIONALES</td>
+						</tr>
+						<tr class="adicionales-cabecera">
+							<td>Descripción</td>
+							<td>Ingresos</td>
+							<td>Egresos</td>
+						</tr>
+						<tr>
+							<td>Fondo 2021</td>
+							<td id="ingreso_fondo_2021"></td>
+							<td id="egreso_fondo_2021"></td>
+						</tr>
+						<tr>
+							<td>Pagos Año 2021</td>
+							<td id="pagos_ano_2021"></td>
+							<td id="egresos_ano_2021"></td>
+						</tr>
+						<tr>
+							<td>Reintegro Comisión Pago Móvil</td>
+							<td id="reintegro_comision"></td>
+							<td id="egresos_reintegro"></td>
+						</tr>
+						<tr>
+							<td>Pago de Intereses</td>
+							<td id="pago_intereses"></td>
+							<td id="egresos_intereses"></td>
+						</tr>
+						<tr>
+							<td>Pago de Agua Apto 0-2-A</td>
+							<td id="pago_agua_02A"></td>
+							<td id="egresos_02A"></td>
+						</tr>
+						<tr class="fila-balance">
+							<td >Balance:</td>
+							<td id="ingresos_adicionales_cell"></td>
+							<td id="egresos_adicionales_cell"></td>
+						</tr>
+						<tr>
+							<td class="fila-separador" colspan="3"></td>
+						</tr>
+						<tr class="fila-fondo-actual">
+							<td>Fondo al ciere de <span id="mes_fondo"></span>:</td>
+							
+							<td colspan="2" id="fondo_actual"></td>
+						</tr>
+					</tbody>
+				</table>
+				<p>Montos expresados en Bs.</p>
+			</div>
+		</section>
+		<section id="documentos_container">
+			<h2>Descarga de Documentos</h2>
+			<div>
+				<ul id="submenu_docs" class="submenu-docs">
+					<li><a href="./doc/const-res/Constancia-de-Residencia.pdf" target="_blank">Constancia de Residencia.</a></li>
+					<li><a href="./doc/doc-condo/Documento-de-Condominio.pdf" target="_blank">Documento de Condominio.</a></li>
+					<li><a href="./doc/reg-condo/Reglamento-de-Condominio.pdf" target="_blank">Reglamento de Condominio.</a></li>
+					<li><a href="./doc/solv-condo/Solvencia-de-Condominio.pdf" target="_blank">Solvencia de Condominio.</a></li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<script type="text/javascript" src="jspdf.min.js"></script> <!-- Script para generar e imprimir archivo .pdf -->
+	<script type="text/javascript" src="condo.js"></script>
+</body>
+</html>
