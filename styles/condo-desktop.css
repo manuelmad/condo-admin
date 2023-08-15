@@ -1,0 +1,65 @@
+main {
+	font-size: var(--lg);
+}
+
+div {
+	width: 100rem;
+}
+
+.info-edificio-container {
+	height: 102.4rem;
+}
+
+.info-edificio-container {
+	background-image: url('../img/building-landscape-large.png');
+}
+
+h1 {
+	padding: 8rem 1rem 6rem;
+	font-size: var(--xxxlg);
+}
+
+.info-edificio {
+	width: 50rem;
+}
+
+.info-edificio p {
+	font-size: var(--xxlg);
+}
+
+.propietarios div {
+	width: 100rem;
+}
+
+#filtro_busqueda {
+	font-size: var(--lg);
+	width: 15rem;
+}
+
+#lista_propietarios, #lista_propietarios_apto {
+	font-size: var(--lg);
+	width: 20rem;
+}
+
+#detalle_deuda {
+	width: 80rem;
+	margin: 2rem auto 0;
+}
+
+#cuerpo_tabla_deuda_hidrolago tr td:nth-child(2),
+#cuerpo_tabla_deuda_azotea tr td:nth-child(2),
+#cuerpo_tabla_deuda_sedemat tr td:nth-child(2),
+#cuerpo_tabla_deuda_corpoelec2 tr td:nth-child(2),
+#cuerpo_tabla_deuda_2022 tr td:nth-child(2),
+#cuerpo_tabla_deuda_2023 tr td:nth-child(2),
+#cuerpo_tabla_deuda_hidrolago_2023 tr td:nth-child(2)  {
+	width: 20rem;
+}
+
+#documentos_container h2 {
+	width: 100rem;
+}
+
+.submenu-docs {
+	width: 100rem;
+}
