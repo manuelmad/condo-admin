@@ -67,7 +67,7 @@ h1 {
 	font-weight: bold;
 	font-size: var(--xlg);
 	margin-bottom: 2rem;
-	color: var(--dark-blue);
+	color: var(--white);
 }
 
 h2 {
@@ -107,7 +107,7 @@ table tr {
 	height: 32rem;
 	position: relative;
 	font-family: 'Dancing Script', cursive;
-	background-color: var(--very-light-gray);
+	background-color: var(--granate-oscuro);
 	background-image: url('../img/building-landscape-small.png');
 	background-position: center;
     background-repeat: no-repeat;
@@ -116,7 +116,7 @@ table tr {
 
 .info-edificio p {
 	font-weight: bold;
-	color: var(--dark-grey);
+	color: var(--light-grey);
 	font-size: var(--lg);
 	margin-top: 0.5rem;
 }
