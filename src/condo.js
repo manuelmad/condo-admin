@@ -64,8 +64,12 @@ function calcularDeudaTotal() {
 	let prop;
 	let text;
 
-	if(filtro_busqueda.value === "nombre") {
+	let valor_busqueda = filtro_busqueda.value;
+	console.log(valor_busqueda);
+
+	if(valor_busqueda === "nombre") {
 		prop = lista_propietarios.value;
+		console.log(prop);
 
 		let prop_hid = cuota_hidrolago.find(item => item["PROPIETARIO"] === prop);
 
@@ -80,7 +84,7 @@ function calcularDeudaTotal() {
 		let prop_hid_2023 = hidrolago_deuda_2023.find(item => item["PROPIETARIO"] === prop);
 
 		// Suma con condicionales para que haga 0 los valores undefined (Hay un propietario que no está en todas las bases de datos)
-		deuda_total_bs = prop_hid ? prop_hid["DEUDA"]:0 + prop_corp ? prop_corp["DEUDA"]:0 + prop_sedemat? prop_sedemat["DEUDA"]:0 + prop_corpii? prop_corpii["DEUDA"]:0 + prop_2022? prop_2022["DEUDA"]:0 + prop_hid_2023 ? prop_hid_2023["DEUDA"]:0;
+		deuda_total_bs = (prop_hid ? prop_hid["DEUDA"]:0) + (prop_corp ? prop_corp["DEUDA"]:0) + (prop_sedemat? prop_sedemat["DEUDA"]:0) + (prop_corpii? prop_corpii["DEUDA"]:0) + (prop_2022? prop_2022["DEUDA"]:0) + (prop_hid_2023 ? prop_hid_2023["DEUDA"]:0);
 
 		let prop_2023 = condominio_deuda_2023.find(item => item["PROPIETARIO"] === prop);
 
@@ -88,8 +92,9 @@ function calcularDeudaTotal() {
 
 		text = `El propietario ${prop}`;
 
-	} else if(filtro_busqueda.value === "apto") {
+	} else if(valor_busqueda === "apto") {
 		prop = lista_propietarios_apto.value;
+		console.log(prop);
 
 		let prop_hid = cuota_hidrolago.find(item => item["APTO."] === prop);
 
@@ -104,7 +109,7 @@ function calcularDeudaTotal() {
 		let prop_hid_2023 = hidrolago_deuda_2023.find(item => item["APTO."] === prop);
 
 		// Suma con condicionales para que haga 0 los valores undefined (Hay un propietario que no está en todas las bases de datos)
-		deuda_total_bs = prop_hid ? prop_hid["DEUDA"]:0 + prop_corp ? prop_corp["DEUDA"]:0 + prop_sedemat? prop_sedemat["DEUDA"]:0 + prop_corpii? prop_corpii["DEUDA"]:0 + prop_2022? prop_2022["DEUDA"]:0 + prop_hid_2023 ? prop_hid_2023["DEUDA"]:0;
+		deuda_total_bs = (prop_hid ? prop_hid["DEUDA"]:0) + (prop_corp ? prop_corp["DEUDA"]:0) + (prop_sedemat? prop_sedemat["DEUDA"]:0) + (prop_corpii? prop_corpii["DEUDA"]:0) + (prop_2022? prop_2022["DEUDA"]:0) + (prop_hid_2023 ? prop_hid_2023["DEUDA"]:0);
 
 		let prop_2023 = condominio_deuda_2023.find(item => item["APTO."] === prop);
 
