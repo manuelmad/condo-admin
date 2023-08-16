@@ -79,7 +79,8 @@ function calcularDeudaTotal() {
 
 		let prop_hid_2023 = hidrolago_deuda_2023.find(item => item["PROPIETARIO"] === prop);
 
-		deuda_total_bs = prop_hid["DEUDA"] + prop_corp["DEUDA"] + prop_sedemat["DEUDA"] + prop_corpii["DEUDA"] + prop_2022["DEUDA"] + prop_hid_2023["DEUDA"];
+		// Suma con condicionales para que haga 0 los valores undefined (Hay un propietario que no está en todas las bases de datos)
+		deuda_total_bs = prop_hid ? prop_hid["DEUDA"]:0 + prop_corp ? prop_corp["DEUDA"]:0 + prop_sedemat? prop_sedemat["DEUDA"]:0 + prop_corpii? prop_corpii["DEUDA"]:0 + prop_2022? prop_2022["DEUDA"]:0 + prop_hid_2023 ? prop_hid_2023["DEUDA"]:0;
 
 		let prop_2023 = condominio_deuda_2023.find(item => item["PROPIETARIO"] === prop);
 
@@ -102,7 +103,8 @@ function calcularDeudaTotal() {
 
 		let prop_hid_2023 = hidrolago_deuda_2023.find(item => item["APTO."] === prop);
 
-		deuda_total_bs = prop_hid["DEUDA"] + prop_corp["DEUDA"] + prop_sedemat["DEUDA"] + prop_corpii["DEUDA"] + prop_2022["DEUDA"] + prop_hid_2023["DEUDA"];
+		// Suma con condicionales para que haga 0 los valores undefined (Hay un propietario que no está en todas las bases de datos)
+		deuda_total_bs = prop_hid ? prop_hid["DEUDA"]:0 + prop_corp ? prop_corp["DEUDA"]:0 + prop_sedemat? prop_sedemat["DEUDA"]:0 + prop_corpii? prop_corpii["DEUDA"]:0 + prop_2022? prop_2022["DEUDA"]:0 + prop_hid_2023 ? prop_hid_2023["DEUDA"]:0;
 
 		let prop_2023 = condominio_deuda_2023.find(item => item["APTO."] === prop);
 
