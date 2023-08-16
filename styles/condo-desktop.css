@@ -6,13 +6,27 @@ div {
 	width: 100rem;
 }
 
-.info-edificio-container {
-	height: 102.4rem;
+.info-container {
+	width: 100%;
+	/* height: 102.4rem; */
+	height: 100vh;
+}
+
+.info-container img {
+	width: 50rem;
+	height: 50rem;
 }
 
 .info-edificio-container {
-	background-image: url('../img/building-landscape-large.png');
+	width: 50%;
+	/* width: 76.8rem; */
+	/* height: 102.4rem; */
+	height: 100%;
 }
+
+/* .info-edificio-container {
+	background-image: url('../img/building-landscape-large.png');
+} */
 
 h1 {
 	padding: 8rem 1rem 6rem;

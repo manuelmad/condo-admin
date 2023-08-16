@@ -20,7 +20,23 @@
 
 	</header>
 	<main>
-		<section class="info-edificio-container">
+		<section class="info-container">
+			<!-- <img src="./img/logo-apamates.png" alt=""> -->
+			<div class="info-edificio-container"></div>
+			<!-- <h1>Condominio Edificio Apamates II</h1> -->
+			<!-- <div class="info-edificio">
+				<p>Urbanización El Varillal</p>
+				<p>Maracaibo, Estado Zulia</p>
+				<p>Venezuela</p>
+			</div> -->
+			<div class="logo-container">
+				<img src="./img/logo-apamates.png" alt="">
+			</div>
+		</section>
+		<div class="logo-container-2">
+			<img src="./img/logo-apamates.png" alt="">
+		</div>
+		<section class="title-container">
 			<h1>Condominio Edificio Apamates II</h1>
 			<div class="info-edificio">
 				<p>Urbanización El Varillal</p>
@@ -66,18 +82,22 @@
 
 		<section class="propietarios">
 			<h2>CALCULADORA DE DEUDA TOTAL</h2>
-			<div><span>Filtrar por:</span>
+			<div class="filter-container">
+				<p>Elija el método de búsqueda:</p>
+				<span>Filtrar por:</span>
 				<select id="filtro_busqueda">
 					<option value="nombre" selected="">Propietario</option>
 					<option value="apto">Apartamento</option>
 				</select>
 			</div>
 			<div id="lista_propietarios_container">
+				<p>Elija el propietario del cual desea calcular la deuda:</p>
 				<select id="lista_propietarios">
 
 				</select>
 			</div>
 			<div id="lista_propietarios_apto_container">
+				<p>Elija el apartamento del propietario al cual desea calcular la deuda:</p>
 				<select id="lista_propietarios_apto">
 
 				</select>

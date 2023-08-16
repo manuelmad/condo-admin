@@ -2,12 +2,29 @@ main {
 	font-size: var(--md);
 }
 
-.info-edificio-container {
+.info-container {
+	width: 100%;
 	height: 60rem;
+	display: flex;
 }
 
+.info-container img {
+	display: block;
+}
+
+
+.info-edificio-container {
+	/* width: 45rem; */
+	width: 50%;
+	height: 60rem;
+}
+/* 
 .info-edificio-container {
 	background-image: url('../img/building-landscape-medium.png');
+} */
+
+.logo-container-2 {
+	display: none;
 }
 
 h1 {

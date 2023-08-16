@@ -62,12 +62,13 @@ section {
 
 h1 {
 	padding: 0 1rem;
-	font-family: 'Dancing Script', cursive;
+	/* font-family: 'Dancing Script', cursive; */
 	text-align: center;
+	text-transform: uppercase;
 	font-weight: bold;
 	font-size: var(--xlg);
-	margin-bottom: 2rem;
-	color: var(--white);
+	margin-bottom: 1rem;
+	color: var(--black);
 }
 
 h2 {
@@ -102,16 +103,62 @@ table tr {
 
 /* Hero */
 
-.info-edificio-container {
+.info-container {
 	width: 100%;
 	height: 32rem;
-	position: relative;
-	font-family: 'Dancing Script', cursive;
 	background-color: var(--granate-oscuro);
-	background-image: url('../img/building-landscape-small.png');
+	padding: 0;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+}
+
+.info-container img {
+	width: 30rem;
+	height: 30rem;
+	display: none;
+}
+
+.info-edificio-container {
+	width: 100%;
+	height: 100%;
+	/* position: relative; */
+	/* font-family: 'Dancing Script', cursive; */
+	/* background-color: var(--granate-oscuro); */
+	/* background-image: url('../img/building-landscape-small.png'); */
+	background-image: url('../img/hero.jpg');
 	background-position: center;
     background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
+	overflow: hidden;
+	margin: 0;
+	/* margin-left: auto;
+	margin-right: auto; */
+	/* opacity: 70%; */
+}
+
+/* .title-container {
+	padding: 0;
+} */
+
+.logo-container-2 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: var(--granate-oscuro);
+}
+
+.logo-container-2 img {
+	width: 30rem;
+	height: 30rem;
+	/* display: none; */
 }
 
 .info-edificio p {
@@ -205,6 +252,10 @@ table tr {
 	border-top: 0.2rem solid var(--verde-planta);
 	padding-top: 2rem;
 	margin-top: 0;
+}
+
+.filter-container p, #lista_propietarios_container p, #lista_propietarios_apto_container p  {
+	margin-bottom: 1rem;
 }
 
 #filtro_busqueda {
