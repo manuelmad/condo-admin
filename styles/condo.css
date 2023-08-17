@@ -106,6 +106,7 @@ table tr {
 .info-container {
 	width: 100%;
 	height: 32rem;
+	/* height: 50vh; */
 	background-color: var(--granate-oscuro);
 	padding: 0;
 }
@@ -150,6 +151,7 @@ table tr {
 	align-items: center;
 	justify-content: center;
 	width: 100%;
+	height: calc(100vh - 320px);
 	margin: 0;
 	padding: 0;
 	background-color: var(--granate-oscuro);
@@ -848,4 +850,8 @@ table tr {
 
 .submenu-docs li a:hover {
 	color: var(--medium-blue);
+}
+
+.submenu-docs img {
+	color: var(--light-grey);
 }
