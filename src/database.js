@@ -359,8 +359,8 @@ const cuota_corpoelec_ii = [
     {
         "APTO.": "2-C",
         "PROPIETARIO": "Euro Alfaro",
-        "PAGO": 0,
-        "DEUDA": 50.73
+        "PAGO": 50.73,
+        "DEUDA": 0
     },
     {
         "APTO.": "2-D",
@@ -536,7 +536,7 @@ const condominio_deuda_2023 = [
     {
         "APTO.": "2-C",
         "PROPIETARIO": "Euro Alfaro",
-        "DEUDA": 18
+        "DEUDA": 2.79
     },
     {
         "APTO.": "2-D",
@@ -624,7 +624,7 @@ const hidrolago_deuda_2023 = [
     {
         "APTO.": "2-C",
         "PROPIETARIO": "Euro Alfaro",
-        "DEUDA": 322.46500000000003
+        "DEUDA": 110
     },
     {
         "APTO.": "2-D",
