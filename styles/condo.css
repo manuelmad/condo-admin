@@ -53,7 +53,7 @@ html {
 
 main {
 	width: 100%;
-	font-size: var(--sm);
+	font-size: var(--md);
 }
 
 section {
@@ -263,15 +263,18 @@ table tr {
 #filtro_busqueda {
 	font-family: 'Roboto Condensed', sans-serif;
 	width: 10rem;
+	font-size: var(--md);
 }
 
 #lista_propietarios {
 	font-family: 'Roboto Condensed', sans-serif;
 	width: 15rem;
+	font-size: var(--md);
 }
 
 #lista_propietarios_apto {
 	width: 6rem;
+	font-size: var(--md);
 }
 
 #boton_deuda {
