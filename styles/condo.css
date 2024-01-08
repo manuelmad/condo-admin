@@ -264,22 +264,36 @@ table tr {
 	font-family: 'Roboto Condensed', sans-serif;
 	width: 10rem;
 	font-size: var(--md);
+	height: 3rem;
 }
 
 #lista_propietarios {
 	font-family: 'Roboto Condensed', sans-serif;
 	width: 15rem;
 	font-size: var(--md);
+	height: 3rem;
 }
 
 #lista_propietarios_apto {
 	width: 6rem;
 	font-size: var(--md);
+	height: 3rem;
 }
 
 #boton_deuda {
-	height: 3rem;
+	height: 4rem;
 	width: 20rem;
+	background-color: var(--granate-oscuro);
+	border: 0.1rem solid var(--granate-oscuro);
+	color: var(--white);
+	border-radius: 2rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#boton_deuda:active {
+	background-color: var(--white);
+	color: var(--granate-oscuro);
 }
 
 #detalle_deuda {

@@ -14,8 +14,8 @@ const cuota_hidrolago = [
     {
         "APTO.": "0-C",
         "PROPIETARIO": "Euro Ochoa",
-        "PAGO": 0,
-        "DEUDA": 115.35
+        "PAGO": 115.35,
+        "DEUDA": 0
     },
     {
         "APTO.": "0-D",
@@ -32,8 +32,8 @@ const cuota_hidrolago = [
     {
         "APTO.": "1-B",
         "PROPIETARIO": "Wilson Manzano",
-        "PAGO": 27.81,
-        "DEUDA": 87.53999999999999
+        "PAGO": 115.35000000000001,
+        "DEUDA": 0
     },
     {
         "APTO.": "1-C",
@@ -99,7 +99,7 @@ const cuota_hidrolago = [
 
 const cuota_corpoelec = [
     {
-        "APTO.": "0-A-1",
+        "APTO.": "0-A1",
         "PROPIETARIO": "Ceila Fuenmayor",
         "PAGO": 93.75,
         "DEUDA": 0
@@ -113,8 +113,8 @@ const cuota_corpoelec = [
     {
         "APTO.": "0-C",
         "PROPIETARIO": "Euro Ochoa",
-        "PAGO": 0,
-        "DEUDA": 93.75
+        "PAGO": 93.75,
+        "DEUDA": 0
     },
     {
         "APTO.": "0-D",
@@ -212,8 +212,8 @@ const cuota_sedemat = [
     {
         "APTO.": "0-C",
         "PROPIETARIO": "Euro Ochoa",
-        "PAGO": 5.48,
-        "DEUDA": 7.119999999999999
+        "PAGO": 12.600000000000001,
+        "DEUDA": 0
     },
     {
         "APTO.": "0-D",
@@ -311,8 +311,8 @@ const cuota_corpoelec_ii = [
     {
         "APTO.": "0-C",
         "PROPIETARIO": "Euro Ochoa",
-        "PAGO": 0,
-        "DEUDA": 50.73
+        "PAGO": 50.73,
+        "DEUDA": 0
     },
     {
         "APTO.": "0-D",
@@ -329,8 +329,8 @@ const cuota_corpoelec_ii = [
     {
         "APTO.": "1-B",
         "PROPIETARIO": "Wilson Manzano",
-        "PAGO": 0,
-        "DEUDA": 50.73
+        "PAGO": 50.73,
+        "DEUDA": 0
     },
     {
         "APTO.": "1-C",
@@ -423,7 +423,7 @@ const condominio_deuda_2022 = [
     {
         "APTO.": "1-B",
         "PROPIETARIO": "Wilson Manzano",
-        "DEUDA": 343.36000000000007
+        "DEUDA": 0
     },
     {
         "APTO.": "1-C",
@@ -473,7 +473,7 @@ const condominio_deuda_2022 = [
     {
         "APTO.": "3-D",
         "PROPIETARIO": "Isabel Aponte",
-        "DEUDA": 715.0100000000001
+        "DEUDA": 789.95
     }
 ];
 
@@ -481,7 +481,7 @@ const condominio_deuda_2023 = [
     {
         "APTO.": "0-A-1",
         "PROPIETARIO": "Ceila Fuenmayor",
-        "DEUDA": 0
+        "DEUDA": 5.5
     },
     {
         "APTO.": "0-A-2",
@@ -496,7 +496,7 @@ const condominio_deuda_2023 = [
     {
         "APTO.": "0-C",
         "PROPIETARIO": "Euro Ochoa",
-        "DEUDA": 97.5
+        "DEUDA": 130.5
     },
     {
         "APTO.": "0-D",
@@ -511,17 +511,17 @@ const condominio_deuda_2023 = [
     {
         "APTO.": "1-B",
         "PROPIETARIO": "Wilson Manzano",
-        "DEUDA": 97.5
+        "DEUDA": 0
     },
     {
         "APTO.": "1-C",
         "PROPIETARIO": "Yesenia Berris",
-        "DEUDA": 76.9
+        "DEUDA": 107.1
     },
     {
         "APTO.": "1-D",
         "PROPIETARIO": "Luzmarina Paz",
-        "DEUDA": 11.5
+        "DEUDA": 18
     },
     {
         "APTO.": "2-A",
@@ -531,7 +531,7 @@ const condominio_deuda_2023 = [
     {
         "APTO.": "2-B",
         "PROPIETARIO": "Verónica Hernández",
-        "DEUDA": 43.5
+        "DEUDA": 0
     },
     {
         "APTO.": "2-C",
@@ -546,7 +546,7 @@ const condominio_deuda_2023 = [
     {
         "APTO.": "3-A",
         "PROPIETARIO": "Neidy Atencio",
-        "DEUDA": 32.5
+        "DEUDA": 55.5
     },
     {
         "APTO.": "3-B",
@@ -561,7 +561,7 @@ const condominio_deuda_2023 = [
     {
         "APTO.": "3-D",
         "PROPIETARIO": "Isabel Aponte",
-        "DEUDA": 97.5
+        "DEUDA": 130.5
     }
 ];
 
@@ -569,7 +569,7 @@ const hidrolago_deuda_2023 = [
     {
         "APTO.": "0-A-1",
         "PROPIETARIO": "Ceila Fuenmayor",
-        "DEUDA": 0
+        "DEUDA": 110
     },
     {
         "APTO.": "0-A-2",
@@ -584,7 +584,7 @@ const hidrolago_deuda_2023 = [
     {
         "APTO.": "0-C",
         "PROPIETARIO": "Euro Ochoa",
-        "DEUDA": 1370
+        "DEUDA": 720.63
     },
     {
         "APTO.": "0-D",
@@ -599,17 +599,17 @@ const hidrolago_deuda_2023 = [
     {
         "APTO.": "1-B",
         "PROPIETARIO": "Wilson Manzano",
-        "DEUDA": 1370
+        "DEUDA": 0
     },
     {
         "APTO.": "1-C",
         "PROPIETARIO": "Yesenia Berris",
-        "DEUDA": 1370
+        "DEUDA": 1950
     },
     {
         "APTO.": "1-D",
         "PROPIETARIO": "Luzmarina Paz",
-        "DEUDA": 77.7
+        "DEUDA": 139.904
     },
     {
         "APTO.": "2-A",
@@ -619,12 +619,12 @@ const hidrolago_deuda_2023 = [
     {
         "APTO.": "2-B",
         "PROPIETARIO": "Verónica Hernández",
-        "DEUDA": 1173.7
+        "DEUDA": 0
     },
     {
         "APTO.": "2-C",
         "PROPIETARIO": "Euro Alfaro",
-        "DEUDA": 0
+        "DEUDA": 47.57300000000001
     },
     {
         "APTO.": "2-D",
@@ -634,7 +634,7 @@ const hidrolago_deuda_2023 = [
     {
         "APTO.": "3-A",
         "PROPIETARIO": "Neidy Atencio",
-        "DEUDA": 344.04
+        "DEUDA": 230
     },
     {
         "APTO.": "3-B",
@@ -644,12 +644,12 @@ const hidrolago_deuda_2023 = [
     {
         "APTO.": "3-C",
         "PROPIETARIO": "Elias Gamboa",
-        "DEUDA": 407.6
+        "DEUDA": 227.12
     },
     {
         "APTO.": "3-D",
         "PROPIETARIO": "Isabel Aponte",
-        "DEUDA": 1370
+        "DEUDA": 1950
     }
 ];
 
