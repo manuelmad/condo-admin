@@ -66,7 +66,9 @@ h1 {
 #cuerpo_tabla_deuda_corpoelec2 tr td:nth-child(2),
 #cuerpo_tabla_deuda_2022 tr td:nth-child(2),
 #cuerpo_tabla_deuda_2023 tr td:nth-child(2),
-#cuerpo_tabla_deuda_hidrolago_2023 tr td:nth-child(2)  {
+#cuerpo_tabla_deuda_2024 tr td:nth-child(2),
+#cuerpo_tabla_deuda_hidrolago_2023 tr td:nth-child(2),
+#cuerpo_tabla_deuda_hidrolago_2024 tr td:nth-child(2)  {
 	width: 20rem;
 }
 

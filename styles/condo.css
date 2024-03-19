@@ -741,7 +741,124 @@ table tr {
 }
 
 
+/* Deuda 2024 */
 
+#deuda_2024_container div {
+	border-top: 0.2rem solid var(--medium-blue);
+}
+
+.tabla-deuda-2024 {
+	margin-top: 2rem;
+	background-color: var(--white);
+}
+
+.tabla-deuda-2024 thead, .tabla-deuda-2024 tbody tr:first-child {
+	background-color: var(--medium-blue);
+	color: var(--white);
+}
+
+.tabla-deuda-2024 thead th {
+	border: 0.1rem solid var(--white);
+	font-weight: normal;
+}
+
+.tabla-deuda-2024 th, .tabla-deuda-2024 td {
+	padding: 0.5rem;
+}
+
+.tabla-deuda-2024 thead tr th,
+.tabla-deuda-2024 thead tr {
+	border-left: 0.1rem solid var(--white);
+	border-right: 0.1rem solid var(--white);
+	border-top: 0.1rem solid var(--white);
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+}
+
+
+.tabla-deuda-2024 tr th,
+.tabla-deuda-2024 tbody tr {
+	border-left: 0.1rem solid var(--white);
+	border-right: 0.1rem solid var(--white);
+}
+
+.tabla-deuda-2024 tbody tr:first-child td {
+	border: 0.1rem solid var(--white);
+}
+
+#cuerpo_tabla_deuda_2024 tr td:nth-child(3) {
+	text-align: end;
+}
+
+.tabla-deuda-2024 tbody tr td:first-child,
+.tabla-deuda-2024 tbody tr:first-child td:nth-child(2),
+#cuerpo_tabla_deuda_2024 tr:first-child td:nth-child(3) {
+	text-align: center;
+}
+
+.tabla-deuda-2024 tbody tr:first-child td:nth-child(2) {
+	width: 14rem;
+}
+
+
+/* Deuda Hidrolago 2024 */
+
+#deuda_hidrolago_2024_container div {
+	border-top: 0.2rem solid var(--dark-pink);
+}
+
+.tabla-deuda-hidrolago-2024 {
+	margin-top: 2rem;
+	background-color: var(--white);
+}
+
+.tabla-deuda-hidrolago-2024 thead, .tabla-deuda-hidrolago-2024 tbody tr:first-child {
+	background-color: var(--dark-pink);
+	color: var(--white);
+}
+
+.tabla-deuda-hidrolago-2024 thead th {
+	border: 0.1rem solid var(--white);
+	font-weight: normal;
+}
+
+.tabla-deuda-hidrolago-2024 th, .tabla-deuda-hidrolago-2024 td {
+	padding: 0.5rem;
+}
+
+.tabla-deuda-hidrolago-2024 thead tr th,
+.tabla-deuda-hidrolago-2024 thead tr {
+	border-left: 0.1rem solid var(--white);
+	border-right: 0.1rem solid var(--white);
+	border-top: 0.1rem solid var(--white);
+	border-top-left-radius: 0.5rem;
+	border-top-right-radius: 0.5rem;
+}
+
+
+.tabla-deuda-hidrolago-2024 tr th,
+.tabla-deuda-hidrolago-2024 tbody tr {
+	border-left: 0.1rem solid var(--white);
+	border-right: 0.1rem solid var(--white);
+}
+
+.tabla-deuda-hidrolago-2024 tbody tr:first-child td {
+	border: 0.1rem solid var(--white);
+}
+
+#cuerpo_tabla_deuda_hidrolago_2024 tr td:nth-child(3) {
+	text-align: end;
+}
+
+.tabla-deuda-hidrolago-2024 tbody tr td:first-child,
+.tabla-deuda-hidrolago-2024 tbody tr:first-child td:nth-child(2),
+#cuerpo_tabla_deuda_hidrolago_2024 tr:first-child td:nth-child(3) {
+	text-align: center;
+}
+
+.tabla-deuda-hidrolago-2024 tbody tr:first-child td:nth-child(2) {
+	width: 14rem;
+}
 
 
 /* Resumen Condominio */
