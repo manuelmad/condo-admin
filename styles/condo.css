@@ -185,6 +185,19 @@ table tr {
 	text-align: start;
 }
 
+.general-info ul li {
+	margin-left: 1rem;
+}
+
+.general-info ul {
+	min-width: 30rem;
+	max-width: 55rem;
+	margin: 0.5rem auto 0;
+	text-align: start;
+	padding-left: 1rem;
+	/* margin-top: 0.5rem; */
+}
+
 .tabla-cuotas {
 	margin-top: 2rem;
 	background-color: white;
