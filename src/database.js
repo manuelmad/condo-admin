@@ -1,663 +1,552 @@
-const cuota_corpoelec = [
+const cuota_corpoelec_1 = [
     {
         "APTO.": "0-A-1",
         "PROPIETARIO": "Ceila Fuenmayor",
-        "PAGO": 93.75,
+        "PAGO": 224.37,
         "DEUDA": 0
     },
     {
         "APTO.": "0-B",
         "PROPIETARIO": "María Troconiz",
-        "PAGO": 93.75,
+        "PAGO": 224.37,
         "DEUDA": 0
     },
     {
         "APTO.": "0-C",
-        "PROPIETARIO": "Euro Ochoa",
-        "PAGO": 93.75,
+        "PROPIETARIO": "Yina Iglesia",
+        "PAGO": 224.37,
         "DEUDA": 0
     },
     {
         "APTO.": "0-D",
         "PROPIETARIO": "Oscar Salas",
-        "PAGO": 93.75,
+        "PAGO": 224.37,
         "DEUDA": 0
     },
     {
         "APTO.": "1-A",
         "PROPIETARIO": "Thania Ávila",
-        "PAGO": 93.75,
+        "PAGO": 224.37,
         "DEUDA": 0
     },
     {
         "APTO.": "1-B",
         "PROPIETARIO": "Wilson Manzano",
-        "PAGO": 93.75,
-        "DEUDA": 0
+        "PAGO": 0,
+        "DEUDA": 291.68
     },
     {
         "APTO.": "1-C",
         "PROPIETARIO": "Yesenia Berris",
-        "PAGO": 93.75,
+        "PAGO": 224.37,
         "DEUDA": 0
     },
     {
         "APTO.": "1-D",
         "PROPIETARIO": "Luzmarina Paz",
-        "PAGO": 93.75,
+        "PAGO": 224.37,
         "DEUDA": 0
     },
     {
         "APTO.": "2-A",
         "PROPIETARIO": "Luís Rívas",
-        "PAGO": 93.75,
+        "PAGO": 224.37,
         "DEUDA": 0
     },
     {
         "APTO.": "2-B",
         "PROPIETARIO": "Verónica Hernández",
-        "PAGO": 93.75,
+        "PAGO": 224.37,
         "DEUDA": 0
     },
     {
         "APTO.": "2-C",
         "PROPIETARIO": "Euro Alfaro",
-        "PAGO": 93.75,
+        "PAGO": 224.37,
         "DEUDA": 0
     },
     {
         "APTO.": "2-D",
         "PROPIETARIO": "Manuel Araujo",
-        "PAGO": 93.75,
+        "PAGO": 224.37,
         "DEUDA": 0
     },
     {
         "APTO.": "3-A",
         "PROPIETARIO": "Neidy Atencio",
-        "PAGO": 93.75,
+        "PAGO": 224.37,
         "DEUDA": 0
     },
     {
         "APTO.": "3-B",
         "PROPIETARIO": "Mariely de García",
-        "PAGO": 93.75,
+        "PAGO": 224.37,
         "DEUDA": 0
     },
     {
         "APTO.": "3-C",
         "PROPIETARIO": "Elias Gamboa",
-        "PAGO": 93.75,
+        "PAGO": 224.37,
         "DEUDA": 0
     },
     {
         "APTO.": "3-D",
-        "PROPIETARIO": "Isabel Aponte",
-        "PAGO": 0,
-        "DEUDA": 93.75
+        "PROPIETARIO": "Jean Carlos Baquero",
+        "PAGO": 224.37,
+        "DEUDA": 0
     }
 ];
 
-const cuota_hidrolago = [
+const cuota_corpoelec_2 = [
     {
         "APTO.": "0-A-1",
         "PROPIETARIO": "Ceila Fuenmayor",
-        "PAGO": 115.35000000000001,
+        "PAGO": 51,
         "DEUDA": 0
     },
     {
         "APTO.": "0-B",
         "PROPIETARIO": "María Troconiz",
-        "PAGO": 115.35,
+        "PAGO": 51,
         "DEUDA": 0
     },
     {
         "APTO.": "0-C",
-        "PROPIETARIO": "Euro Ochoa",
-        "PAGO": 115.35,
+        "PROPIETARIO": "Yina Iglesia",
+        "PAGO": 51,
         "DEUDA": 0
     },
     {
         "APTO.": "0-D",
         "PROPIETARIO": "Oscar Salas",
-        "PAGO": 115.35,
+        "PAGO": 51,
         "DEUDA": 0
     },
     {
         "APTO.": "1-A",
         "PROPIETARIO": "Thania Ávila",
-        "PAGO": 115.35,
+        "PAGO": 51,
         "DEUDA": 0
     },
     {
         "APTO.": "1-B",
         "PROPIETARIO": "Wilson Manzano",
-        "PAGO": 115.35000000000001,
-        "DEUDA": 0
+        "PAGO": 0,
+        "DEUDA": 56.1
     },
     {
         "APTO.": "1-C",
         "PROPIETARIO": "Yesenia Berris",
-        "PAGO": 115.35,
+        "PAGO": 51,
         "DEUDA": 0
     },
     {
         "APTO.": "1-D",
         "PROPIETARIO": "Luzmarina Paz",
-        "PAGO": 115.35,
+        "PAGO": 51,
         "DEUDA": 0
     },
     {
         "APTO.": "2-A",
         "PROPIETARIO": "Luís Rívas",
-        "PAGO": 115.35000000000001,
+        "PAGO": 51,
         "DEUDA": 0
     },
     {
         "APTO.": "2-B",
         "PROPIETARIO": "Verónica Hernández",
-        "PAGO": 115.35,
-        "DEUDA": 0
+        "PAGO": 0,
+        "DEUDA": 56.1
     },
     {
         "APTO.": "2-C",
         "PROPIETARIO": "Euro Alfaro",
-        "PAGO": 115.35,
+        "PAGO": 51,
         "DEUDA": 0
     },
     {
         "APTO.": "2-D",
         "PROPIETARIO": "Manuel Araujo",
-        "PAGO": 115.35,
+        "PAGO": 51,
         "DEUDA": 0
     },
     {
         "APTO.": "3-A",
         "PROPIETARIO": "Neidy Atencio",
-        "PAGO": 115.35,
-        "DEUDA": 0
+        "PAGO": 0,
+        "DEUDA": 56.1
     },
     {
         "APTO.": "3-B",
         "PROPIETARIO": "Mariely de García",
-        "PAGO": 115.35,
+        "PAGO": 51,
         "DEUDA": 0
     },
     {
         "APTO.": "3-C",
         "PROPIETARIO": "Elias Gamboa",
-        "PAGO": 115.35,
-        "DEUDA": 0
+        "PAGO": 0,
+        "DEUDA": 56.1
     },
     {
         "APTO.": "3-D",
-        "PROPIETARIO": "Isabel Aponte",
+        "PROPIETARIO": "Jean Carlos Baquero",
         "PAGO": 0,
-        "DEUDA": 115.35
+        "DEUDA": 56.1
     }
 ];
 
-const cuota_sedemat = [
+const cuota_cilindro_capacitador = [
     {
         "APTO.": "0-A-1",
         "PROPIETARIO": "Ceila Fuenmayor",
-        "PAGO": 12.6,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "0-B",
-        "PROPIETARIO": "María Troconiz",
-        "PAGO": 12.6,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "0-C",
-        "PROPIETARIO": "Euro Ochoa",
-        "PAGO": 12.600000000000001,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "0-D",
-        "PROPIETARIO": "Oscar Salas",
-        "PAGO": 12.6,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "1-A",
-        "PROPIETARIO": "Thania Ávila",
-        "PAGO": 12.6,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "1-B",
-        "PROPIETARIO": "Wilson Manzano",
-        "PAGO": 12.6,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "1-C",
-        "PROPIETARIO": "Yesenia Berris",
-        "PAGO": 12.6,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "1-D",
-        "PROPIETARIO": "Luzmarina Paz",
-        "PAGO": 12.6,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "2-A",
-        "PROPIETARIO": "Luís Rívas",
-        "PAGO": 12.6,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "2-B",
-        "PROPIETARIO": "Verónica Hernández",
-        "PAGO": 12.6,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "2-C",
-        "PROPIETARIO": "Euro Alfaro",
-        "PAGO": 12.6,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "2-D",
-        "PROPIETARIO": "Manuel Araujo",
-        "PAGO": 12.6,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "3-A",
-        "PROPIETARIO": "Neidy Atencio",
-        "PAGO": 12.6,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "3-B",
-        "PROPIETARIO": "Mariely de García",
-        "PAGO": 12.6,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "3-C",
-        "PROPIETARIO": "Elias Gamboa",
-        "PAGO": 12.6,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "3-D",
-        "PROPIETARIO": "Isabel Aponte",
-        "PAGO": 0,
-        "DEUDA": 12.6
-    }
-];
-
-const cuota_corpoelec_ii = [
-    {
-        "APTO.": "0-A1",
-        "PROPIETARIO": "Ceila Fuenmayor",
-        "PAGO": 50.73,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "0-B",
-        "PROPIETARIO": "María Troconiz",
-        "PAGO": 50.73,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "0-C",
-        "PROPIETARIO": "Euro Ochoa",
-        "PAGO": 50.73,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "0-D",
-        "PROPIETARIO": "Oscar Salas",
-        "PAGO": 50.73,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "1-A",
-        "PROPIETARIO": "Thania Ávila",
-        "PAGO": 50.73,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "1-B",
-        "PROPIETARIO": "Wilson Manzano",
-        "PAGO": 50.73,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "1-C",
-        "PROPIETARIO": "Yesenia Berris",
-        "PAGO": 0,
-        "DEUDA": 50.73
-    },
-    {
-        "APTO.": "1-D",
-        "PROPIETARIO": "Luzmarina Paz",
-        "PAGO": 50.730000000000004,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "2-A",
-        "PROPIETARIO": "Luís Rívas",
-        "PAGO": 50.73,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "2-B",
-        "PROPIETARIO": "Verónica Hernández",
-        "PAGO": 50.73,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "2-C",
-        "PROPIETARIO": "Euro Alfaro",
-        "PAGO": 50.73,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "2-D",
-        "PROPIETARIO": "Manuel Araujo",
-        "PAGO": 50.73,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "3-A",
-        "PROPIETARIO": "Neidy Atencio",
-        "PAGO": 50.73,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "3-B",
-        "PROPIETARIO": "Mariely de García",
-        "PAGO": 50.73,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "3-C",
-        "PROPIETARIO": "Elias Gamboa",
-        "PAGO": 50.73,
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "3-D",
-        "PROPIETARIO": "Isabel Aponte",
-        "PAGO": 0,
-        "DEUDA": 50.73
-    }
-];
-
-const condominio_deuda_2022 = [
-    {
-        "APTO.": "0-A-1",
-        "PROPIETARIO": "Ceila Fuenmayor",
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "0-B",
-        "PROPIETARIO": "María Troconiz",
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "0-C",
-        "PROPIETARIO": "Euro Ochoa",
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "0-D",
-        "PROPIETARIO": "Oscar Salas",
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "1-A",
-        "PROPIETARIO": "Thania Ávila",
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "1-B",
-        "PROPIETARIO": "Wilson Manzano",
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "1-C",
-        "PROPIETARIO": "Yesenia Berris",
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "1-D",
-        "PROPIETARIO": "Luzmarina Paz",
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "2-A",
-        "PROPIETARIO": "Luís Rívas",
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "2-B",
-        "PROPIETARIO": "Verónica Hernández",
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "2-C",
-        "PROPIETARIO": "Euro Alfaro",
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "2-D",
-        "PROPIETARIO": "Manuel Araujo",
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "3-A",
-        "PROPIETARIO": "Neidy Atencio",
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "3-B",
-        "PROPIETARIO": "Mariely de García",
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "3-C",
-        "PROPIETARIO": "Elias Gamboa",
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "3-D",
-        "PROPIETARIO": "Isabel Aponte",
-        "DEUDA": 902.36
-    }
-];
-
-const condominio_deuda_2023 = [
-    {
-        "APTO.": "0-A-1",
-        "PROPIETARIO": "Ceila Fuenmayor",
+        "PAGO": 78,
         "DEUDA": 0
     },
     {
         "APTO.": "0-A-2",
         "PROPIETARIO": "Yoice Herrera",
+        "PAGO": 75,
         "DEUDA": 0
     },
     {
         "APTO.": "0-B",
         "PROPIETARIO": "María Troconiz",
+        "PAGO": 78,
         "DEUDA": 0
     },
     {
         "APTO.": "0-C",
-        "PROPIETARIO": "Euro Ochoa",
-        "DEUDA": 123.3
+        "PROPIETARIO": "Yina Iglesia",
+        "PAGO": 78,
+        "DEUDA": 0
     },
     {
         "APTO.": "0-D",
         "PROPIETARIO": "Oscar Salas",
+        "PAGO": 78,
         "DEUDA": 0
     },
     {
         "APTO.": "1-A",
         "PROPIETARIO": "Thania Ávila",
+        "PAGO": 78,
         "DEUDA": 0
     },
     {
         "APTO.": "1-B",
         "PROPIETARIO": "Wilson Manzano",
+        "PAGO": 78,
         "DEUDA": 0
     },
     {
         "APTO.": "1-C",
         "PROPIETARIO": "Yesenia Berris",
-        "DEUDA": 141.9
+        "PAGO": 78,
+        "DEUDA": 0
     },
     {
         "APTO.": "1-D",
         "PROPIETARIO": "Luzmarina Paz",
+        "PAGO": 78,
         "DEUDA": 0
     },
     {
         "APTO.": "2-A",
         "PROPIETARIO": "Luís Rívas",
+        "PAGO": 78,
         "DEUDA": 0
     },
     {
         "APTO.": "2-B",
         "PROPIETARIO": "Verónica Hernández",
-        "DEUDA": 0
+        "PAGO": 0,
+        "DEUDA": 85.8
     },
     {
         "APTO.": "2-C",
         "PROPIETARIO": "Euro Alfaro",
+        "PAGO": 78,
         "DEUDA": 0
     },
     {
         "APTO.": "2-D",
         "PROPIETARIO": "Manuel Araujo",
+        "PAGO": 78,
         "DEUDA": 0
     },
     {
         "APTO.": "3-A",
         "PROPIETARIO": "Neidy Atencio",
-        "DEUDA": 79.5
+        "PAGO": 78,
+        "DEUDA": 0
     },
     {
         "APTO.": "3-B",
         "PROPIETARIO": "Mariely de García",
+        "PAGO": 78,
         "DEUDA": 0
     },
     {
         "APTO.": "3-C",
         "PROPIETARIO": "Elias Gamboa",
+        "PAGO": 78,
         "DEUDA": 0
     },
     {
         "APTO.": "3-D",
-        "PROPIETARIO": "Isabel Aponte",
-        "DEUDA": 169.5
+        "PROPIETARIO": "Jean Carlos Baquero",
+        "PAGO": 0,
+        "DEUDA": 85.8
     }
 ];
 
-const hidrolago_deuda_2023 = [
+const cuota_corpoelec_3 = [
     {
         "APTO.": "0-A-1",
         "PROPIETARIO": "Ceila Fuenmayor",
-        "DEUDA": 0
-    },
-    {
-        "APTO.": "0-A-2",
-        "PROPIETARIO": "Yoice Herrera",
-        "DEUDA": 0
+        "PAGO": 0,
+        "DEUDA": 25
     },
     {
         "APTO.": "0-B",
         "PROPIETARIO": "María Troconiz",
+        "PAGO": 25,
         "DEUDA": 0
     },
     {
         "APTO.": "0-C",
-        "PROPIETARIO": "Euro Ochoa",
+        "PROPIETARIO": "Yina Iglesia",
+        "PAGO": 25,
         "DEUDA": 0
     },
     {
         "APTO.": "0-D",
         "PROPIETARIO": "Oscar Salas",
+        "PAGO": 25,
         "DEUDA": 0
     },
     {
         "APTO.": "1-A",
         "PROPIETARIO": "Thania Ávila",
+        "PAGO": 25,
         "DEUDA": 0
     },
     {
         "APTO.": "1-B",
         "PROPIETARIO": "Wilson Manzano",
-        "DEUDA": 0
+        "PAGO": 0,
+        "DEUDA": 25
     },
     {
         "APTO.": "1-C",
         "PROPIETARIO": "Yesenia Berris",
-        "DEUDA": 2610
+        "PAGO": 25,
+        "DEUDA": 0
     },
     {
         "APTO.": "1-D",
         "PROPIETARIO": "Luzmarina Paz",
+        "PAGO": 25,
         "DEUDA": 0
     },
     {
         "APTO.": "2-A",
         "PROPIETARIO": "Luís Rívas",
-        "DEUDA": 0
+        "PAGO": 0,
+        "DEUDA": 25
     },
     {
         "APTO.": "2-B",
         "PROPIETARIO": "Verónica Hernández",
-        "DEUDA": 0
+        "PAGO": 0,
+        "DEUDA": 25
     },
     {
         "APTO.": "2-C",
         "PROPIETARIO": "Euro Alfaro",
-        "DEUDA": 0
+        "PAGO": 0,
+        "DEUDA": 25
     },
     {
         "APTO.": "2-D",
         "PROPIETARIO": "Manuel Araujo",
+        "PAGO": 25,
         "DEUDA": 0
     },
     {
         "APTO.": "3-A",
         "PROPIETARIO": "Neidy Atencio",
-        "DEUDA": 290
+        "PAGO": 0,
+        "DEUDA": 25
     },
     {
         "APTO.": "3-B",
         "PROPIETARIO": "Mariely de García",
-        "DEUDA": 0
+        "PAGO": 0,
+        "DEUDA": 25
     },
     {
         "APTO.": "3-C",
         "PROPIETARIO": "Elias Gamboa",
-        "DEUDA": 0
+        "PAGO": 0,
+        "DEUDA": 25
     },
     {
         "APTO.": "3-D",
-        "PROPIETARIO": "Isabel Aponte",
-        "DEUDA": 2610
+        "PROPIETARIO": "Jean Carlos Baquero",
+        "PAGO": 0,
+        "DEUDA": 25
     }
 ];
+
+const cuota_torre_c = [
+    {
+        "APTO.": "0-C",
+        "PROPIETARIO": "Yina Iglesia",
+        "PAGO": 350,
+        "DEUDA": 0
+    },
+    {
+        "APTO.": "1-C",
+        "PROPIETARIO": "Yesenia Berris",
+        "PAGO": 350,
+        "DEUDA": 0
+    },
+    {
+        "APTO.": "2-C",
+        "PROPIETARIO": "Euro Alfaro",
+        "PAGO": 0,
+        "DEUDA": 350
+    },
+    {
+        "APTO.": "3-C",
+        "PROPIETARIO": "Elias Gamboa",
+        "PAGO": 0,
+        "DEUDA": 350
+    }
+];
+
+const cuota_torre_a = [
+    {
+        "APTO.": "0-B",
+        "PROPIETARIO": "María Troconiz",
+        "PAGO": 400,
+        "DEUDA": 0
+    },
+    {
+        "APTO.": "1-B",
+        "PROPIETARIO": "Wilson Manzano",
+        "PAGO": 400,
+        "DEUDA": 0
+    },
+    {
+        "APTO.": "2-B",
+        "PROPIETARIO": "Verónica Hernández",
+        "PAGO": 0,
+        "DEUDA": 400
+    },
+    {
+        "APTO.": "3-B",
+        "PROPIETARIO": "Mariely de García",
+        "PAGO": 400,
+        "DEUDA": 0
+    }
+];
+
+// const hidrolago_deuda_2023 = [
+//     {
+//         "APTO.": "0-A-1",
+//         "PROPIETARIO": "Ceila Fuenmayor",
+//         "DEUDA": 0
+//     },
+//     {
+//         "APTO.": "0-A-2",
+//         "PROPIETARIO": "Yoice Herrera",
+//         "DEUDA": 0
+//     },
+//     {
+//         "APTO.": "0-B",
+//         "PROPIETARIO": "María Troconiz",
+//         "DEUDA": 0
+//     },
+//     {
+//         "APTO.": "0-C",
+//         "PROPIETARIO": "Euro Ochoa",
+//         "DEUDA": 0
+//     },
+//     {
+//         "APTO.": "0-D",
+//         "PROPIETARIO": "Oscar Salas",
+//         "DEUDA": 0
+//     },
+//     {
+//         "APTO.": "1-A",
+//         "PROPIETARIO": "Thania Ávila",
+//         "DEUDA": 0
+//     },
+//     {
+//         "APTO.": "1-B",
+//         "PROPIETARIO": "Wilson Manzano",
+//         "DEUDA": 0
+//     },
+//     {
+//         "APTO.": "1-C",
+//         "PROPIETARIO": "Yesenia Berris",
+//         "DEUDA": 2610
+//     },
+//     {
+//         "APTO.": "1-D",
+//         "PROPIETARIO": "Luzmarina Paz",
+//         "DEUDA": 0
+//     },
+//     {
+//         "APTO.": "2-A",
+//         "PROPIETARIO": "Luís Rívas",
+//         "DEUDA": 0
+//     },
+//     {
+//         "APTO.": "2-B",
+//         "PROPIETARIO": "Verónica Hernández",
+//         "DEUDA": 0
+//     },
+//     {
+//         "APTO.": "2-C",
+//         "PROPIETARIO": "Euro Alfaro",
+//         "DEUDA": 0
+//     },
+//     {
+//         "APTO.": "2-D",
+//         "PROPIETARIO": "Manuel Araujo",
+//         "DEUDA": 0
+//     },
+//     {
+//         "APTO.": "3-A",
+//         "PROPIETARIO": "Neidy Atencio",
+//         "DEUDA": 290
+//     },
+//     {
+//         "APTO.": "3-B",
+//         "PROPIETARIO": "Mariely de García",
+//         "DEUDA": 0
+//     },
+//     {
+//         "APTO.": "3-C",
+//         "PROPIETARIO": "Elias Gamboa",
+//         "DEUDA": 0
+//     },
+//     {
+//         "APTO.": "3-D",
+//         "PROPIETARIO": "Isabel Aponte",
+//         "DEUDA": 2610
+//     }
+// ];
 
 const condominio_deuda_2024 = [
     {
         "APTO.": "0-A-1",
         "PROPIETARIO": "Ceila Fuenmayor",
-        "DEUDA": 11.5
+        "DEUDA": 45.444
     },
     {
         "APTO.": "0-A-2",
@@ -671,8 +560,8 @@ const condominio_deuda_2024 = [
     },
     {
         "APTO.": "0-C",
-        "PROPIETARIO": "Euro Ochoa",
-        "DEUDA": 18
+        "PROPIETARIO": "Yina Iglesia",
+        "DEUDA": 109.8
     },
     {
         "APTO.": "0-D",
@@ -687,17 +576,17 @@ const condominio_deuda_2024 = [
     {
         "APTO.": "1-B",
         "PROPIETARIO": "Wilson Manzano",
-        "DEUDA": 18
+        "DEUDA": 126
     },
     {
         "APTO.": "1-C",
         "PROPIETARIO": "Yesenia Berris",
-        "DEUDA": 18
+        "DEUDA": 126
     },
     {
         "APTO.": "1-D",
         "PROPIETARIO": "Luzmarina Paz",
-        "DEUDA": 18
+        "DEUDA": 0.0020000000000007703
     },
     {
         "APTO.": "2-A",
@@ -707,12 +596,12 @@ const condominio_deuda_2024 = [
     {
         "APTO.": "2-B",
         "PROPIETARIO": "Verónica Hernández",
-        "DEUDA": 0
+        "DEUDA": 11
     },
     {
         "APTO.": "2-C",
         "PROPIETARIO": "Euro Alfaro",
-        "DEUDA": 5.5
+        "DEUDA": 0
     },
     {
         "APTO.": "2-D",
@@ -722,7 +611,7 @@ const condominio_deuda_2024 = [
     {
         "APTO.": "3-A",
         "PROPIETARIO": "Neidy Atencio",
-        "DEUDA": 18
+        "DEUDA": 0
     },
     {
         "APTO.": "3-B",
@@ -732,12 +621,12 @@ const condominio_deuda_2024 = [
     {
         "APTO.": "3-C",
         "PROPIETARIO": "Elias Gamboa",
-        "DEUDA": 5.5
+        "DEUDA": 21.439999999999998
     },
     {
         "APTO.": "3-D",
-        "PROPIETARIO": "Isabel Aponte",
-        "DEUDA": 18
+        "PROPIETARIO": "Jean Carlos Baquero",
+        "DEUDA": 0
     }
 ];
 
@@ -745,7 +634,7 @@ const hidrolago_deuda_2024 = [
     {
         "APTO.": "0-A-1",
         "PROPIETARIO": "Ceila Fuenmayor",
-        "DEUDA": 230
+        "DEUDA": 0
     },
     {
         "APTO.": "0-A-2",
@@ -759,7 +648,7 @@ const hidrolago_deuda_2024 = [
     },
     {
         "APTO.": "0-C",
-        "PROPIETARIO": "Euro Ochoa",
+        "PROPIETARIO": "Yina Iglesia",
         "DEUDA": 0
     },
     {
@@ -775,12 +664,12 @@ const hidrolago_deuda_2024 = [
     {
         "APTO.": "1-B",
         "PROPIETARIO": "Wilson Manzano",
-        "DEUDA": 360
+        "DEUDA": 780
     },
     {
         "APTO.": "1-C",
         "PROPIETARIO": "Yesenia Berris",
-        "DEUDA": 360
+        "DEUDA": 0
     },
     {
         "APTO.": "1-D",
@@ -800,7 +689,7 @@ const hidrolago_deuda_2024 = [
     {
         "APTO.": "2-C",
         "PROPIETARIO": "Euro Alfaro",
-        "DEUDA": 61.193000000000005
+        "DEUDA": 0
     },
     {
         "APTO.": "2-D",
@@ -810,7 +699,7 @@ const hidrolago_deuda_2024 = [
     {
         "APTO.": "3-A",
         "PROPIETARIO": "Neidy Atencio",
-        "DEUDA": 360
+        "DEUDA": 0
     },
     {
         "APTO.": "3-B",
@@ -820,12 +709,12 @@ const hidrolago_deuda_2024 = [
     {
         "APTO.": "3-C",
         "PROPIETARIO": "Elias Gamboa",
-        "DEUDA": 221.04000000000002
+        "DEUDA": 0
     },
     {
         "APTO.": "3-D",
-        "PROPIETARIO": "Isabel Aponte",
-        "DEUDA": 360
+        "PROPIETARIO": "Jean Carlos Baquero",
+        "DEUDA": 0
     }
 ];
 

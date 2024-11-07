@@ -876,7 +876,7 @@ table tr {
 
 /* Resumen Condominio */
 
-.resumen_condo_container {
+.resumen_condo_container, #deuda_hidrolago_2023_container {
 	display: none;
 }
 
