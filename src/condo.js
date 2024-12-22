@@ -83,7 +83,7 @@ function calcularDeudaTotal() {
 
 		let prop_2022 = cuota_torre_c.find(item => item["PROPIETARIO"] === prop);
 
-		let prop_2023 = cuota_torre_a.find(item => item["PROPIETARIO"] === prop);
+		let prop_2023 = cuota_torre_b.find(item => item["PROPIETARIO"] === prop);
 
 		//let prop_hid_2023 = hidrolago_deuda_2023.find(item => item["PROPIETARIO"] === prop);
 
@@ -93,7 +93,7 @@ function calcularDeudaTotal() {
 		deuda_total_bs = (prop_hid ? prop_hid["DEUDA"]:0) + (prop_corp ? prop_corp["DEUDA"]:0) + (prop_sedemat? prop_sedemat["DEUDA"]:0) + (prop_corpii? prop_corpii["DEUDA"]:0) + (prop_2022? prop_2022["DEUDA"]:0) + (prop_2023? prop_2023["DEUDA"]:0) + /*(prop_hid_2023 ? prop_hid_2023["DEUDA"]:0) +*/ (prop_hid_2024 ? prop_hid_2024["DEUDA"]:0);
 
 		// Dólares
-		// let prop_2023 = cuota_torre_a.find(item => item["PROPIETARIO"] === prop);
+		// let prop_2023 = cuota_torre_b.find(item => item["PROPIETARIO"] === prop);
 
 		let prop_2024 = condominio_deuda_2024.find(item => item["PROPIETARIO"] === prop);
 
@@ -117,7 +117,7 @@ function calcularDeudaTotal() {
 
 		let prop_2022 = cuota_torre_c.find(item => item["APTO."] === prop);
 
-		let prop_2023 = cuota_torre_a.find(item => item["APTO."] === prop);
+		let prop_2023 = cuota_torre_b.find(item => item["APTO."] === prop);
 
 		//let prop_hid_2023 = hidrolago_deuda_2023.find(item => item["APTO."] === prop);
 
@@ -127,7 +127,7 @@ function calcularDeudaTotal() {
 		deuda_total_bs = (prop_hid ? prop_hid["DEUDA"]:0) + (prop_corp ? prop_corp["DEUDA"]:0) + (prop_sedemat? prop_sedemat["DEUDA"]:0) + (prop_corpii? prop_corpii["DEUDA"]:0) + (prop_2022? prop_2022["DEUDA"]:0) + (prop_2023? prop_2023["DEUDA"]:0) + /*(prop_hid_2023 ? prop_hid_2023["DEUDA"]:0)*/ + (prop_hid_2024 ? prop_hid_2024["DEUDA"]:0);
 
 		// Dólares
-		//let prop_2023 = cuota_torre_a.find(item => item["APTO."] === prop);
+		//let prop_2023 = cuota_torre_b.find(item => item["APTO."] === prop);
 
 		let prop_2024 = condominio_deuda_2024.find(item => item["APTO."] === prop);
 
@@ -342,7 +342,7 @@ for(let i = 0; i < cuota_torre_c.length; i++) {
 const cuerpo_tabla_deuda_2023 = document.getElementById("cuerpo_tabla_deuda_2023");
 
 // Ciclo para agregar cada nueva fila con el número de columnas indicado y contenido correspondiente
-for(let i = 0; i < cuota_torre_a.length; i++) {
+for(let i = 0; i < cuota_torre_b.length; i++) {
 	// Creo una nueva fila
 	let nueva_fila_deuda_2023 = document.createElement("tr");
 
@@ -362,9 +362,9 @@ for(let i = 0; i < cuota_torre_a.length; i++) {
 	cuerpo_tabla_deuda_2023.appendChild(nueva_fila_deuda_2023);
 
 	// Inserto contenido a las celdas de la nueva fila
-	nueva_columna1.innerText = cuota_torre_a[i]["APTO."];
-	nueva_columna2.innerText = `${cuota_torre_a[i]["PROPIETARIO"]}`;
-	nueva_columna3.innerText = cuota_torre_a[i]["DEUDA"].toFixed(2);
+	nueva_columna1.innerText = cuota_torre_b[i]["APTO."];
+	nueva_columna2.innerText = `${cuota_torre_b[i]["PROPIETARIO"]}`;
+	nueva_columna3.innerText = cuota_torre_b[i]["DEUDA"].toFixed(2);
 
 	// Cuento las filas del cuerpo de la tabla
 	let conteo_filas = cuerpo_tabla_deuda_2023.getElementsByTagName("tr").length;
