@@ -81,16 +81,16 @@ function calcularDeudaTotal() {
 
 		let prop_corpii = cuota_corpoelec_3.find(item => item["PROPIETARIO"] === prop);
 
-		let prop_2022 = cuota_torre_c.find(item => item["PROPIETARIO"] === prop);
+		let prop_2022 = cuota_corpoelec_4.find(item => item["PROPIETARIO"] === prop);
 
-		let prop_2023 = cuota_torre_b.find(item => item["PROPIETARIO"] === prop);
+		//let prop_2023 = cuota_torre_b.find(item => item["PROPIETARIO"] === prop);
 
 		//let prop_hid_2023 = hidrolago_deuda_2023.find(item => item["PROPIETARIO"] === prop);
 
 		let prop_hid_2024 = hidrolago_deuda_2024.find(item => item["PROPIETARIO"] === prop);
 
 		// Suma con condicionales para que haga 0 los valores undefined (Hay un propietario que no está en todas las bases de datos)
-		deuda_total_bs = (prop_hid ? prop_hid["DEUDA"]:0) + (prop_corp ? prop_corp["DEUDA"]:0) + (prop_sedemat? prop_sedemat["DEUDA"]:0) + (prop_corpii? prop_corpii["DEUDA"]:0) + (prop_2022? prop_2022["DEUDA"]:0) + (prop_2023? prop_2023["DEUDA"]:0) + /*(prop_hid_2023 ? prop_hid_2023["DEUDA"]:0) +*/ (prop_hid_2024 ? prop_hid_2024["DEUDA"]:0);
+		deuda_total_bs = (prop_hid ? prop_hid["DEUDA"]:0) + (prop_corp ? prop_corp["DEUDA"]:0) + (prop_sedemat? prop_sedemat["DEUDA"]:0) + (prop_corpii? prop_corpii["DEUDA"]:0) + (prop_2022? prop_2022["DEUDA"]:0) + /*(prop_2023? prop_2023["DEUDA"]:0) +*/ /*(prop_hid_2023 ? prop_hid_2023["DEUDA"]:0) +*/ (prop_hid_2024 ? prop_hid_2024["DEUDA"]:0);
 
 		// Dólares
 		// let prop_2023 = cuota_torre_b.find(item => item["PROPIETARIO"] === prop);
@@ -115,16 +115,16 @@ function calcularDeudaTotal() {
 
 		let prop_corpii = cuota_corpoelec_3.find(item => item["APTO."] === prop);
 
-		let prop_2022 = cuota_torre_c.find(item => item["APTO."] === prop);
+		let prop_2022 = cuota_corpoelec_4.find(item => item["APTO."] === prop);
 
-		let prop_2023 = cuota_torre_b.find(item => item["APTO."] === prop);
+		//let prop_2023 = cuota_torre_b.find(item => item["APTO."] === prop);
 
 		//let prop_hid_2023 = hidrolago_deuda_2023.find(item => item["APTO."] === prop);
 
 		let prop_hid_2024 = hidrolago_deuda_2024.find(item => item["APTO."] === prop);
 
 		// Suma con condicionales para que haga 0 los valores undefined (Hay un propietario que no está en todas las bases de datos)
-		deuda_total_bs = (prop_hid ? prop_hid["DEUDA"]:0) + (prop_corp ? prop_corp["DEUDA"]:0) + (prop_sedemat? prop_sedemat["DEUDA"]:0) + (prop_corpii? prop_corpii["DEUDA"]:0) + (prop_2022? prop_2022["DEUDA"]:0) + (prop_2023? prop_2023["DEUDA"]:0) + /*(prop_hid_2023 ? prop_hid_2023["DEUDA"]:0)*/ + (prop_hid_2024 ? prop_hid_2024["DEUDA"]:0);
+		deuda_total_bs = (prop_hid ? prop_hid["DEUDA"]:0) + (prop_corp ? prop_corp["DEUDA"]:0) + (prop_sedemat? prop_sedemat["DEUDA"]:0) + (prop_corpii? prop_corpii["DEUDA"]:0) + (prop_2022? prop_2022["DEUDA"]:0) + /*(prop_2023? prop_2023["DEUDA"]:0) +*/ /*(prop_hid_2023 ? prop_hid_2023["DEUDA"]:0)*/ + (prop_hid_2024 ? prop_hid_2024["DEUDA"]:0);
 
 		// Dólares
 		//let prop_2023 = cuota_torre_b.find(item => item["APTO."] === prop);
@@ -304,7 +304,7 @@ for(let i = 0; i < cuota_corpoelec_3.length; i++) {
 const cuerpo_tabla_deuda_2022 = document.getElementById("cuerpo_tabla_deuda_2022");
 
 // Ciclo para agregar cada nueva fila con el número de columnas indicado y contenido correspondiente
-for(let i = 0; i < cuota_torre_c.length; i++) {
+for(let i = 0; i < cuota_corpoelec_4.length; i++) {
 	// Creo una nueva fila
 	let nueva_fila_deuda_2022 = document.createElement("tr");
 
@@ -324,9 +324,9 @@ for(let i = 0; i < cuota_torre_c.length; i++) {
 	cuerpo_tabla_deuda_2022.appendChild(nueva_fila_deuda_2022);
 
 	// Inserto contenido a las celdas de la nueva fila
-	nueva_columna1.innerText = cuota_torre_c[i]["APTO."];
-	nueva_columna2.innerText = `${cuota_torre_c[i]["PROPIETARIO"]}`;
-	nueva_columna3.innerText = cuota_torre_c[i]["DEUDA"].toFixed(2);
+	nueva_columna1.innerText = cuota_corpoelec_4[i]["APTO."];
+	nueva_columna2.innerText = `${cuota_corpoelec_4[i]["PROPIETARIO"]}`;
+	nueva_columna3.innerText = cuota_corpoelec_4[i]["DEUDA"].toFixed(2);
 
 	// Cuento las filas del cuerpo de la tabla
 	let conteo_filas = cuerpo_tabla_deuda_2022.getElementsByTagName("tr").length;
@@ -339,41 +339,41 @@ for(let i = 0; i < cuota_torre_c.length; i++) {
 
 /* AÑO 2023*/
 // Accedo al body de la tabla de deuda 2023
-const cuerpo_tabla_deuda_2023 = document.getElementById("cuerpo_tabla_deuda_2023");
+// const cuerpo_tabla_deuda_2023 = document.getElementById("cuerpo_tabla_deuda_2023");
 
-// Ciclo para agregar cada nueva fila con el número de columnas indicado y contenido correspondiente
-for(let i = 0; i < cuota_torre_b.length; i++) {
-	// Creo una nueva fila
-	let nueva_fila_deuda_2023 = document.createElement("tr");
+// // Ciclo para agregar cada nueva fila con el número de columnas indicado y contenido correspondiente
+// for(let i = 0; i < cuota_torre_b.length; i++) {
+// 	// Creo una nueva fila
+// 	let nueva_fila_deuda_2023 = document.createElement("tr");
 
-	// Creo las columnas de esa nueva fila
-	let nueva_columna1 = document.createElement("td");
-	let nueva_columna2 = document.createElement("td");
-	let nueva_columna3 = document.createElement("td");
+// 	// Creo las columnas de esa nueva fila
+// 	let nueva_columna1 = document.createElement("td");
+// 	let nueva_columna2 = document.createElement("td");
+// 	let nueva_columna3 = document.createElement("td");
 	
 
-	// Inserto todas las columnas dentro de la fila que creé
-	nueva_fila_deuda_2023.appendChild(nueva_columna1);
-	nueva_fila_deuda_2023.appendChild(nueva_columna2);
-	nueva_fila_deuda_2023.appendChild(nueva_columna3);
+// 	// Inserto todas las columnas dentro de la fila que creé
+// 	nueva_fila_deuda_2023.appendChild(nueva_columna1);
+// 	nueva_fila_deuda_2023.appendChild(nueva_columna2);
+// 	nueva_fila_deuda_2023.appendChild(nueva_columna3);
 
 
-	// Inserto la nueva fila al cuerpo de la tabla
-	cuerpo_tabla_deuda_2023.appendChild(nueva_fila_deuda_2023);
+// 	// Inserto la nueva fila al cuerpo de la tabla
+// 	cuerpo_tabla_deuda_2023.appendChild(nueva_fila_deuda_2023);
 
-	// Inserto contenido a las celdas de la nueva fila
-	nueva_columna1.innerText = cuota_torre_b[i]["APTO."];
-	nueva_columna2.innerText = `${cuota_torre_b[i]["PROPIETARIO"]}`;
-	nueva_columna3.innerText = cuota_torre_b[i]["DEUDA"].toFixed(2);
+// 	// Inserto contenido a las celdas de la nueva fila
+// 	nueva_columna1.innerText = cuota_torre_b[i]["APTO."];
+// 	nueva_columna2.innerText = `${cuota_torre_b[i]["PROPIETARIO"]}`;
+// 	nueva_columna3.innerText = cuota_torre_b[i]["DEUDA"].toFixed(2);
 
-	// Cuento las filas del cuerpo de la tabla
-	let conteo_filas = cuerpo_tabla_deuda_2023.getElementsByTagName("tr").length;
+// 	// Cuento las filas del cuerpo de la tabla
+// 	let conteo_filas = cuerpo_tabla_deuda_2023.getElementsByTagName("tr").length;
 
-	// Aplico color de fondo a los hijos impares del cuerpo de tabla
-	if(conteo_filas % 2 !== 0) {
-		nueva_fila_deuda_2023.style.backgroundColor = '#C3F4FE';
-	}
-}
+// 	// Aplico color de fondo a los hijos impares del cuerpo de tabla
+// 	if(conteo_filas % 2 !== 0) {
+// 		nueva_fila_deuda_2023.style.backgroundColor = '#C3F4FE';
+// 	}
+// }
 
 /* HIDROLAGO AÑO 2023*/
 // Accedo al body de la tabla de deuda hidrolago 2023
